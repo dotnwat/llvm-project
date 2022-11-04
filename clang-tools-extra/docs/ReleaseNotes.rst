@@ -105,6 +105,11 @@ New checks
   Finds usages of ``realloc`` where the return value is assigned to the
   same expression as passed to the first argument.
 
+- New :doc:`cppcoreguidelines-avoid-capturing-lambda-coroutines
+  <clang-tidy/checks/cppcoreguidelines/avoid-capturing-lambda-coroutines>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`cppcoreguidelines-avoid-const-or-ref-data-members
   <clang-tidy/checks/cppcoreguidelines/avoid-const-or-ref-data-members>` check.
 
