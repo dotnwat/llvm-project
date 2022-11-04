@@ -16,6 +16,7 @@
 #include "../readability/MagicNumbersCheck.h"
 #include "AvoidCapturingLambdaCoroutinesCheck.h"
 #include "AvoidConstOrRefDataMembersCheck.h"
+#include "AvoidCoroutineReferenceParametersCheck.h"
 #include "AvoidDoWhileCheck.h"
 #include "AvoidGotoCheck.h"
 #include "AvoidNonConstGlobalVariablesCheck.h"
@@ -54,6 +55,8 @@ public:
         "cppcoreguidelines-avoid-capturing-lambda-coroutines");
     CheckFactories.registerCheck<AvoidConstOrRefDataMembersCheck>(
         "cppcoreguidelines-avoid-const-or-ref-data-members");
+    CheckFactories.registerCheck<AvoidCoroutineReferenceParametersCheck>(
+        "cppcoreguidelines-avoid-coroutine-reference-parameters");
     CheckFactories.registerCheck<AvoidDoWhileCheck>(
         "cppcoreguidelines-avoid-do-while");
     CheckFactories.registerCheck<AvoidGotoCheck>(
